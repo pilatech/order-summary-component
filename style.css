@@ -1,0 +1,133 @@
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+:root {
+ font-size: 62.5%;
+ --pale-blue: hsl(225, 100%, 94%);
+ --bright-blue: hsl(245, 75%, 52%);
+ --very-pale-blue: hsl(225, 100%, 98%);
+ --desaturated-blue: hsl(224, 23%, 55%);
+ --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: var(--dark-blue);
+  background: var(--pale-blue);
+}
+
+img {
+ display: block;
+ max-width: 100%;
+}
+
+.card {
+ width: 98%;
+ max-width: 37rem;
+ border-radius: 2rem;
+ margin-top: 7rem;
+ overflow: hidden;
+ background: #fff;
+}
+
+.card__hero {
+ height: 16rem;
+ margin-bottom: 3rem;
+}
+
+.card__hero-img {
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+
+.card__content {
+ padding-inline: 2.5rem;
+}
+
+.card__title {
+ font-weight: 900;
+ margin-bottom: 1rem;
+}
+
+.card__text {
+ color: var(--desaturated-blue);
+ width: 85%;
+ margin-inline: auto;
+ line-height: 1.6;
+ margin-bottom: 2.5rem;
+}
+
+.card__sold-item {
+ display: flex;
+ align-items: center;
+ background: var(--very-pale-blue);
+ padding: 2rem;
+ border-radius: 1.5rem;
+ margin-bottom: 2.5rem;
+}
+
+.card__pricing {
+ color: var(--desaturated-blue);
+}
+
+.card__plan {
+  font-weight: 700;
+  color: var(--dark-blue)
+}
+
+.card__link {
+ margin-left: auto;
+ font-weight: 700;
+ color: var(--bright-blue);
+ transition: .2s;
+}
+
+.card__link:hover,
+.card__link:active {
+ color: var(--desaturated-blue);
+ text-decoration: none;
+}
+
+.btn {
+ display: block;
+ font-family: inherit;
+ font-weight: 900;
+ border: none;
+ width: 100%;
+ padding: 1.5rem;
+ border-radius: 1.3rem;
+ margin-bottom: 1.5rem;
+ cursor: pointer;
+}
+
+.btn--primary {
+ color: #fff;
+ background: var(--bright-blue);
+ box-shadow: 0 1.8rem 2.3rem rgba(114, 128, 167, .25);
+ transition: .2s;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+ background: var(--desaturated-blue);
+}
+
+.btn--muted {
+  color: var(--desaturated-blue);
+  background: transparent;
+  transition: .2s;
+}
+
+.btn--muted:hover,
+.btn--muted:active {
+ color: #000;
+}
